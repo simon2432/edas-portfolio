@@ -8,12 +8,12 @@
 
 | | |
 |---|---|
-| **Source** | [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) |
+| **Source** | [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data) |
 | **Size** | ~100K orders, multiple relational tables |
 | **Period** | January 2017 – August 2018 |
 | **Scope** | Delivered orders with valid delivery dates |
 
-> **Note:** Large data files are not tracked in this repo. Download the dataset from the Kaggle link above and place the CSV files in the `data/` folder before running the notebook.
+> **Note:** Data files are not tracked in this repo. Download the full dataset from the Kaggle link above and place all CSV files in the `data/` folder before running the notebook.
 
 ---
 
@@ -47,21 +47,32 @@
 
 ---
 
+## Data setup
+
+Download the full dataset from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data) and place all CSV files in the `data/` folder.
+
+```
+data/
+├── olist_orders_dataset.csv
+├── olist_order_items_dataset.csv
+├── olist_order_reviews_dataset.csv
+├── olist_customers_dataset.csv
+├── olist_order_payments_dataset.csv
+├── olist_products_dataset.csv
+├── olist_sellers_dataset.csv
+├── olist_geolocation_dataset.csv
+└── product_category_name_translation.csv
+```
+
+> All files in `data/` are gitignored.
+
 ## Structure
 
 ```
 olist-ecommerce/
-├── eda_olist_ecommerce.ipynb   ← main analysis
+├── eda_olist_ecommerce.ipynb
 └── data/
-    ├── olist_sellers_dataset.csv                  ← included (small)
-    ├── product_category_name_translation.csv      ← included (small)
-    ├── olist_orders_dataset.csv                   ← download from Kaggle
-    ├── olist_order_items_dataset.csv              ← download from Kaggle
-    ├── olist_order_reviews_dataset.csv            ← download from Kaggle
-    ├── olist_customers_dataset.csv                ← download from Kaggle
-    ├── olist_order_payments_dataset.csv           ← download from Kaggle
-    ├── olist_products_dataset.csv                 ← download from Kaggle
-    └── olist_geolocation_dataset.csv              ← download from Kaggle
+    └── .gitkeep
 ```
 
 ---

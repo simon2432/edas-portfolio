@@ -1,15 +1,6 @@
-# ── Large data files ──────────────────────────────────────────────
-# UK Retail (~43 MB)
-eda/uk-retail/data/ecom_data.csv
-
-# Olist large files (5–58 MB each)
-eda/olist-ecommerce/data/olist_orders_dataset.csv
-eda/olist-ecommerce/data/olist_order_items_dataset.csv
-eda/olist-ecommerce/data/olist_order_reviews_dataset.csv
-eda/olist-ecommerce/data/olist_customers_dataset.csv
-eda/olist-ecommerce/data/olist_order_payments_dataset.csv
-eda/olist-ecommerce/data/olist_products_dataset.csv
-eda/olist-ecommerce/data/olist_geolocation_dataset.csv
+# ── Data files (all projects — download links in each project's README) ──
+**/data/*
+!**/data/.gitkeep
 
 # ── Python ────────────────────────────────────────────────────────
 __pycache__/

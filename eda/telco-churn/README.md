@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| **Source** | [IBM Telco Customer Churn (Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) |
+| **Source** | [Telco Customer Churn (Kaggle)](https://www.kaggle.com/datasets/ylchang/telco-customer-churn-1113) |
 | **Size** | 7,043 customers × 33 columns |
 | **Geography** | California, USA |
 | **Target** | `Churn Label` (Yes / No) — baseline churn rate: **26.5%** |
@@ -43,18 +43,29 @@ Run a controlled experiment offering free Tech Support for the first 3 months to
 
 ---
 
+## Data setup
+
+Download the dataset from [Kaggle](https://www.kaggle.com/datasets/ylchang/telco-customer-churn-1113) and place all files in the `data/` folder. The notebook uses `Telco_customer_churn.xlsx` as the main source.
+
+```
+data/
+├── Telco_customer_churn.xlsx             ← main file (used by notebook)
+├── Telco_customer_churn_demographics.xlsx
+├── Telco_customer_churn_location.xlsx
+├── Telco_customer_churn_population.xlsx
+├── Telco_customer_churn_services.xlsx
+└── Telco_customer_churn_status.xlsx
+```
+
+> All files in `data/` are gitignored.
+
 ## Structure
 
 ```
 telco-churn/
-├── eda_telco_churn.ipynb   ← main analysis
+├── eda_telco_churn.ipynb
 └── data/
-    ├── Telco_customer_churn.xlsx             ← main merged file (used by notebook)
-    ├── Telco_customer_churn_demographics.xlsx
-    ├── Telco_customer_churn_location.xlsx
-    ├── Telco_customer_churn_population.xlsx
-    ├── Telco_customer_churn_services.xlsx
-    └── Telco_customer_churn_status.xlsx
+    └── .gitkeep
 ```
 
 ---

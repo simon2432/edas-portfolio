@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| **Source** | [Forbes Richest Athletes (Kaggle)](https://www.kaggle.com/datasets/parulpandey/forbes-highest-paid-athletes-19902019) |
+| **Source** | [Forbes Richest Athletes (Kaggle)](https://www.kaggle.com/datasets/parulpandey/forbes-highest-paid-athletes-19902019/data) |
 | **Size** | 301 rows (top 10 per year, 1990–2020) |
 | **Columns** | Rank, athlete name, nationality, sport, total earnings |
 
@@ -33,13 +33,19 @@
 
 ---
 
+## Data setup
+
+Download `forbes_richest_athletes.csv` from [Kaggle](https://www.kaggle.com/datasets/parulpandey/forbes-highest-paid-athletes-19902019/data) and place it in the `data/` folder.
+
+> All files in `data/` are gitignored.
+
 ## Structure
 
 ```
 forbes-athletes/
-├── eda_forbes_athletes.ipynb   ← main analysis
+├── eda_forbes_athletes.ipynb
 └── data/
-    └── forbes_richest_athletes.csv
+    └── .gitkeep
 ```
 
 ---

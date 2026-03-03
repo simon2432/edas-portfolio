@@ -23,12 +23,54 @@ A collection of data analysis and machine learning projects. Each project includ
 
 ---
 
+## Setup — Conda environment
+
+All EDA projects share the same environment. Follow these steps to set it up:
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/<your-username>/data-portfolio.git
+cd data-portfolio
+```
+
+**2. Create the conda environment**
+```bash
+conda create -n data-portfolio python=3.10
+conda activate data-portfolio
+```
+
+**3. Install dependencies**
+```bash
+pip install -r eda/requirements.txt
+```
+
+**4. Register the environment as a Jupyter kernel**
+```bash
+python -m ipykernel install --user --name data-portfolio --display-name "Python (data-portfolio)"
+```
+
+**5. Launch Jupyter**
+```bash
+jupyter notebook
+```
+Then select the `Python (data-portfolio)` kernel when opening any notebook.
+
+**6. Download the data**
+
+Each project's `data/` folder is gitignored. See the individual project READMEs for the Kaggle download link and the files you need to place in `data/`.
+
+---
+
 ## Repository Structure
 
 ```
 data-portfolio/
 │
+├── README.md
+├── .gitignore
+│
 ├── eda/
+│   ├── requirements.txt         ← shared dependencies for all EDA projects
 │   ├── telco-churn/
 │   ├── forbes-athletes/
 │   ├── olist-ecommerce/
@@ -38,21 +80,6 @@ data-portfolio/
 ```
 
 Each project folder contains:
-- A Jupyter notebook with the full analysis
-- A `README.md` with problem statement, findings, and data source
-- A `data/` folder (large files are gitignored — see each project's README for download instructions)
-
----
-
-## Setup
-
-```bash
-# Clone the repo
-git clone https://github.com/<your-username>/data-portfolio.git
-cd data-portfolio
-
-# Install dependencies
-pip install pandas numpy matplotlib seaborn scipy openpyxl
-```
-
-Notebooks were developed with Python 3.10+. No additional configuration needed — just download any large data files listed in the project READMEs and place them in the corresponding `data/` folder.
+- A Jupyter notebook with the full analysis (`eda_<project>.ipynb`)
+- A `README.md` with problem, findings, and data download instructions
+- A `data/` folder with a `.gitkeep` (populate locally after downloading from Kaggle)
