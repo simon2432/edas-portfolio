@@ -1,10 +1,10 @@
-# Data Portfolio
+# EDA Portfolio
 
-A collection of data analysis and machine learning projects. Each project includes a focused problem statement, exploratory analysis, and actionable findings.
+A collection of exploratory data analysis projects. Each project includes a focused problem statement, exploratory analysis, and actionable findings.
 
 ---
 
-## EDA Projects
+## Projects
 
 | Project                                                | Dataset                             | Key Topics                                                           | Tools                       |
 | ------------------------------------------------------ | ----------------------------------- | -------------------------------------------------------------------- | --------------------------- |
@@ -15,17 +15,9 @@ A collection of data analysis and machine learning projects. Each project includ
 
 ---
 
-## ML Projects
-
-| Project         | Dataset | Type | Status |
-| --------------- | ------- | ---- | ------ |
-| _(coming soon)_ |         |      |        |
-
----
-
 ## Setup — Conda environment
 
-All EDA projects share the same environment. Follow these steps to set it up:
+All projects share the same environment. Follow these steps to set it up:
 
 **1. Clone the repository**
 
@@ -75,14 +67,12 @@ data-portfolio/
 ├── README.md
 ├── .gitignore
 │
-├── eda/
-│   ├── requirements.txt         ← shared dependencies for all EDA projects
-│   ├── telco-churn/
-│   ├── forbes-athletes/
-│   ├── olist-ecommerce/
-│   └── uk-retail/
-│
-└── ml-projects/
+└── eda/
+    ├── requirements.txt         ← shared dependencies for all projects
+    ├── telco-churn/
+    ├── forbes-athletes/
+    ├── olist-ecommerce/
+    └── uk-retail/
 ```
 
 Each project folder contains:
